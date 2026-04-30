@@ -1,16 +1,67 @@
-# React + Vite
+# Customer Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React based customer management application that allows you to create, edit and view customer records with multiple mobile numbers and addresses.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Customer Management**
+  - Create new customers with form validation
+  - View all customers in a responsive table
+  - Edit existing customer information
+  - Search customers by name or NIC
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic Form Fields**
+  - Add/remove multiple mobile numbers dynamically
+  - Add/remove multiple addresses dynamically
+  - Real time form validation
+  - Error messages for invalid inputs
 
-## Expanding the ESLint configuration
+- **Data Handling**
+  - Proper payload structure matching backend requirements
+  - Automatic data cleanup (removes empty entries)
+  - Loading states during API calls
+  - Success/error notifications
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Excel Upload**
+  - Bulk customer upload via Excel files
+  - Support for .xlsx and .xls formats
+
+- **User Experience**
+  - Responsive design for mobile and desktop
+  - Clean and modern UI
+  - Disabled NIC field during edit
+  - Cancel confirmation dialog
+
+## Tech Stack
+
+- **React 18** - UI library
+- **React Router DOM 6** - Routing and navigation
+- **Axios** - HTTP client for API calls
+- **CSS3** - Custom styling (no external libraries)
+- **React Hooks** - State management (useState, useEffect)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** (v14 or higher) - [Download](https://nodejs.org/)
+- **npm** (v6 or higher) or **yarn** - Comes with Node.js
+- **Git** (optional)
+
+## Installation
+
+### Using Git 
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/customer-management-frontend.git
+
+# Navigate to project directory
+cd customer-management-frontend
+
+# Install dependencies
+npm install
+
+# Start the application
+npm run dev
